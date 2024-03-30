@@ -1,0 +1,6 @@
+Name: Nhuan
+Birthdate: 20/10/2005
+Math score: 10
+Physic score: 10
+Language score: 10
+
