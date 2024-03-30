@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+	//Given a singly linked list, find middle of the linked list and set middle node of the 
+	//linked list at beginning of the linked list. 
+	
+	//Input  : 1 2 3 4 5 
+	//Output : 3 1 2 4 5
+	//
+	//Input  : 1 2 3 4 5 6
+	//Output : 4 1 2 3 5 6 
+
 struct ListNode{
 	int data;
 	ListNode* next;
