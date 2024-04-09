@@ -90,7 +90,7 @@ void addOneUtil(ListNode* &head){
 	// if some carry is still there, add a new node to 
 	// result list. 
 	if(carry > 0){
-		current->next = new ListNode(carry);
+		temp->next = new ListNode(carry);
 	}
 }
 

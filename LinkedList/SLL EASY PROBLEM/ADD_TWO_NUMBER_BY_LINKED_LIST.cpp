@@ -74,7 +74,7 @@ void Reverse(ListNode* &head){
 	head = prev;
 }
 
-ListNode* addTwoList(ListNode* &first, ListNode* &second){
+ListNode* addTwoList(ListNode* first, ListNode* second){
     ListNode* res = nullptr;
     ListNode* temp = nullptr;
     ListNode* prev = nullptr;
