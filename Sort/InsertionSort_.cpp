@@ -2,15 +2,21 @@
 using namespace std;
 
 void insertionSort(int a[], int n){
-	int i, key, j;
+	int i, j, key;
 	for(int i = 1; i < n; i++){
+		// Lưu phần tử hiện tại vào key
 		key = a[i];
-		j = i - 1;
 		
+		// Bắt đầu so sánh với các phần tử phía trước
+		j = i - 1;
+		// Di chuyển các phần tử của a[0..i-1], mà lớn hơn
+		// giá trị key đến vị trí trước vị trí hiện tại
+		// của chúng
 		while(j >= 0 && a[j] > key){
 			a[j+1] = a[j];
-			j = j - 1;
+			j--;
 		}
+		
 		a[j+1] = key;
 	}
 }
