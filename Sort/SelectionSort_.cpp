@@ -2,14 +2,14 @@
 using namespace std;
 
 void selectionSort(int a[], int n){
+	//tìm phần tử nhỏ nhất trong mảng chưa được sắp xếp
 	for(int i = 0; i < n - 1; i++){
 		int minIndex = i;
-		for(int j = i+1; j < n; j++){
+		for(int j = i + 1; j < n; j++){
 			if(a[j] < a[minIndex]){
 				minIndex = j;
 			}
 		}
-		
 		
 		int temp = a[minIndex];
 		a[minIndex] = a[i];
