@@ -2,17 +2,19 @@
 using namespace std;
 
 int binarySearch(int a[], int left, int right, int x){
-	if(right >= left){
+	while(left <= right){
 		int mid = left + (right - left)/2;
 		
 		if(a[mid] == x){
 			return mid;
 		}
-		if(a[mid] > x){
-			return binarySearch(a, left, mid - 1, x);
+		
+		if(x < a[mid]){
+			right = mid - 1;
 		}
-		if(a[mid] < x){
-			return binarySearch(a, mid + 1, right, x);
+		
+		if(x > a[mid]){
+			left = mid + 1;
 		}
 	}
 	
