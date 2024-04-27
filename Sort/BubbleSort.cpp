@@ -15,7 +15,7 @@ void bubbleSort(int a[], int n){
 
 void input(int a[], int n){
 	for(int i = 0; i < n; i++){
-		a[i] = rand() % 10000 + 1;
+		a[i] = rand() % 100 + 1;
 	}
 }
 
